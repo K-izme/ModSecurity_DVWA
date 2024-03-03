@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  dvwa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    environment:
+      MYSQL_ROOT_PASSWORD: vulnerables
+
